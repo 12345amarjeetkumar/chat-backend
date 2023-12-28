@@ -40,5 +40,5 @@ app.use("/uploads", express.static("uploads"));
 
 //starting app
 const PORT=8000;
-app.listen(PORT,()=>console.log(`server is running PORT : ${PORT}`))
+app.listen(PORT,()=>console.log(` main server is running PORT : ${PORT}`))
 
