@@ -89,7 +89,7 @@ const Signup = async (req, res) => {
         html: `
         <h1> Welcome in GupShup Family ! </h1>
         <p> We are happy to onboard you </p>
-        <a href="http://127.0.0.1:8000/Auth/activate-account/${token}"> Click here to verify the email </a>
+        <a href="${process.env.BACKEND_URL}/Auth/activateAcount${token}"> Click here to verify the email </a>
         `,
       };
   
