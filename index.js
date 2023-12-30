@@ -39,6 +39,12 @@ app.use("/Messages",messagesRoutes)
 app.use("/uploads", express.static("uploads"));
 
 //starting app
-const PORT=8000;
+let PORT;
+if(process.env.PORT){
+    PORT=process.env.PORT
+}
+else{
+    PORT=8000
+}
 app.listen(PORT,()=>console.log(` main server is running PORT : ${PORT}`))
 
